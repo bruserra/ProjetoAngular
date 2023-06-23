@@ -1,0 +1,9 @@
+
+.plano-de-fundo{
+  --background: url('https://images.pexels.com/photos/14823950/pexels-photo-14823950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center / cover;
+}
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+
+  box-shadow: 4px 0px 16px rgba(255, 0, 255, 0.18);
+}
