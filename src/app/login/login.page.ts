@@ -5,17 +5,12 @@ import { IonicModule } from '@ionic/angular';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.page.html',
-  styleUrls: ['./menu.page.scss'],
+  selector: 'app-login',
+  templateUrl: './login.page.html',
+  styleUrls: ['./login.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule,RouterLink]
 })
-export class MenuPage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class LoginPage {
+  public alertButtons = ['OK'];
 }

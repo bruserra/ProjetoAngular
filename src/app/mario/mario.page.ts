@@ -5,13 +5,13 @@ import { IonicModule } from '@ionic/angular';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.page.html',
-  styleUrls: ['./menu.page.scss'],
+  selector: 'app-mario',
+  templateUrl: './mario.page.html',
+  styleUrls: ['./mario.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule,RouterLink]
 })
-export class MenuPage implements OnInit {
+export class MarioPage implements OnInit {
 
   constructor() { }
 

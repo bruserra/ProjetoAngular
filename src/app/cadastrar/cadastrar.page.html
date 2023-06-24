@@ -7,6 +7,10 @@
     </ion-header>
     <ion-content class="ion-padding">
       <ion-item>
+        <ion-label routerLink="/menu">Voltar ao Menu</ion-label>
+      </ion-item>
+      
+      <ion-item>
         <ion-label routerLink="/mario">Super Mario</ion-label>
       </ion-item>
 
@@ -66,14 +70,6 @@
         <ion-label routerLink="/sobre">Sobre</ion-label>
       </ion-item>
 
-      <ion-item>
-        <ion-label routerLink="/login">Login</ion-label>
-      </ion-item>
-
-      <ion-item>
-        <ion-label routerLink="/cadastrar">Cadastrar-se</ion-label>
-      </ion-item>
-
     </ion-content>
   </ion-menu>
   <div class="ion-page" id="main-content">
@@ -82,21 +78,45 @@
         <ion-buttons slot="start">
           <ion-menu-button color="medium"></ion-menu-button>
         </ion-buttons>
-        <ion-title>Menu</ion-title>
+        <ion-title>Cadastro</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding" class="plano-de-fundo">
-          <h2>Bem vindo! Aqui você poderá encontrar informações sobre diversos personagens da Nintendo!</h2>
-          <ion-row>
-            <ion-col size="12" class="ion-text-center">
-              <ion-button color="tertiary" shape="round" routerLink="/login">Login</ion-button>
-            </ion-col>
+      <ion-row>
+        <ion-col size="12" class="ion-text-center">
 
-            <ion-col size="12" class="ion-text-center">
-              <ion-button color="tertiary" shape="round" routerLink="/cadastrar">Cadastrar-se</ion-button>
-            </ion-col>
+          <ion-card>
+            <ion-card-content>
 
-          </ion-row>
+              <ion-item>
+                <ion-input label="Usuário"></ion-input>
+              </ion-item>
+    
+              <ion-item>
+                <ion-input label="Senha"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-input label="Confirmar Senha"></ion-input>
+              </ion-item>
+    
+              <ion-item lines="none">
+                <ion-button color="medium" shape="rounded" slot="start" routerLink="/menu">Voltar</ion-button>
+                <ion-button color="primary" shape="rounded" slot="end" id="present-alert">Cadastrar-se</ion-button>
+                <ion-alert 
+                  trigger="present-alert"
+                  header="Login Concluído!"
+                  message="Seu cadastro foi concluído com sucesso!"
+                  [buttons]="alertButtons"
+                  routerLink="/menu"
+                ></ion-alert> 
+              </ion-item>
+    
+            </ion-card-content>
+          </ion-card>
+          
+        </ion-col>
+      </ion-row>
     </ion-content>
   </div>
 </ion-content>

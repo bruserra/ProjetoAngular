@@ -5,17 +5,13 @@ import { IonicModule } from '@ionic/angular';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.page.html',
-  styleUrls: ['./menu.page.scss'],
+  selector: 'app-cadastrar',
+  templateUrl: './cadastrar.page.html',
+  styleUrls: ['./cadastrar.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule,RouterLink]
 })
-export class MenuPage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class CadastrarPage {
+  public alertButtons = ['OK'];
 
 }
