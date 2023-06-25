@@ -1,0 +1,12 @@
+ion-menu::part(backdrop) {
+    background-color:#012030;
+  }
+  
+  ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+  
+    box-shadow: 4px 0px 16px #012030;
+  }
+  .plano-de-fundo {
+    --background: url('https://oyster.ignimgs.com/mediawiki/apis.ign.com/super-mario-wii-u/d/d7/406px-Luigi_Artwork_-_Super_Mario_3D_World.png') no-repeat center center / cover;
+  }

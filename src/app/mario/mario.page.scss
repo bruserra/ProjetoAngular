@@ -7,3 +7,6 @@ ion-menu::part(backdrop) {
   
     box-shadow: 4px 0px 16px #012030;
   }
+  .plano-de-fundo {
+    --background: url('https://supermariorun.com/assets/img/stage/mario03.png') no-repeat center center / cover;
+  }

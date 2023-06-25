@@ -1,0 +1,12 @@
+ion-menu::part(backdrop) {
+    background-color:#012030;
+  }
+  
+  ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+  
+    box-shadow: 4px 0px 16px #012030;
+  }
+  .plano-de-fundo {
+    --background: url('https://mario.wiki.gallery/images/thumb/7/7d/MSOGT_Bowser.png/300px-MSOGT_Bowser.png') no-repeat center center / cover;
+  }

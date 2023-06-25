@@ -1,13 +1,128 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>luigi</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">luigi</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Personagens</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-item>
+        <ion-label routerLink="/menu">Voltar ao Menu</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/mario">Super Mário</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/peach">Princesa Peach</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/yoshi">Yoshi</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/bowser">Bowser</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/toad">Toad</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/wario">Wario</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/waluigi">Waluigi</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/daisy">Princesa Daisy</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/rosalina">Rosalina</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/donkey-kong">Donkey Kong</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/diddy-kong">Diddy Kong</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/lakitu">Lakitu</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/shy-guy">Shy Guy</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/sobre">Sobre</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/login">Login</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/cadastrar">Cadastrar-se</ion-label>
+      </ion-item>
+
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button color="medium"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Luigi</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding" class="plano-de-fundo">
+
+      <ion-row>
+        <ion-col>
+          <ion-accordion-group #accordionGroup>
+            <ion-accordion value="first">
+              <ion-item slot="header" color="light">
+                <ion-label>Apresentação do Personagem</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">Luigi é um personagem fictício de videogames produzido pela Nintendo. Criado pelo designer de jogos Shigeru Miyamoto, Luigi é irmão do Mario e é um dos mascotes da série, ele é o seu companheiro em vários jogos.</div>
+            </ion-accordion>
+            <ion-accordion value="second">
+              <ion-item slot="header" color="light">
+                <ion-label>Sobre o Personagem</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">A primeira aparição de Luigi se deu no jogo Mario 
+                Bros. em 1983, como personagem controlado pelo segundo jogador. Ele manteve esse papel 
+                em Super Mario Bros., Super Mario Bros. 3, Super Mario World e outros títulos. O primeiro 
+                jogo em que estrelou como personagem primário foi Super Mario Bros. 2. Luigi protagonizou 
+                o jogo educativo Mario is Missing!, e mais tarde repetiu o papel em Luigi's Mansion, jogo 
+                lançado para o Gamecube em 2001. Nos dois jogos, é colocado no papel de herói porque Mario, 
+                o protagonista normal da franquia, precisa ser salvo.
+                No jogo Super Mario RPG descobre-se que o maior sonho de Luigi é se tornar um encanador tão bom quanto seu irmão.</div>
+            </ion-accordion>
+            <ion-accordion value="third">
+              <ion-item slot="header" color="light">
+                <ion-label>Criação</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">Miyamoto foi inspirado pelo jogo "Joust" para criar 
+                um jogo com dois jogadores simultâneo, que o levou a criar Mario Bros em 1983, com Luigi 
+                como segundo personagem jogável. Há um rumor de que o nome de Luigi foi criado a partir de 
+                uma pizzaria que ficava perto da Nintendo americana em Washington. Miyamoto observou que a 
+                palavra ruiji significava similar em japonês, e foi adotado Luigi como nome por causa da 
+                semelhança já que nessa época o personagem era apenas diferenciado pela cor.</div>
+            </ion-accordion>
+          </ion-accordion-group>
+        </ion-col>
+      </ion-row>
+    </ion-content>
+  </div>
 </ion-content>
