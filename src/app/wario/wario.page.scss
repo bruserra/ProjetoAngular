@@ -1,0 +1,12 @@
+ion-menu::part(backdrop) {
+    background-color:#012030;
+  }
+  
+  ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+  
+    box-shadow: 4px 0px 16px #012030;
+  }
+  .plano-de-fundo {
+    --background: url('https://upload.wikimedia.org/wikipedia/en/8/81/Wario.png') no-repeat center center / cover;
+  }

@@ -1,13 +1,130 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>daisy</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">daisy</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="success">
+        <ion-title>Personagens</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-item>
+        <ion-label routerLink="/menu">Voltar ao Menu</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/mario">Super Mario</ion-label>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label routerLink="/peach">Princesa Peach</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/luigi">Luigi</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/yoshi">Yoshi</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/bowser">Bowser</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/toad">Toad</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/wario">Wario</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/waluigi">Waluigi</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/rosalina">Rosalina</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/donkey-kong">Donkey Kong</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/diddy-kong">Diddy Kong</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/lakitu">Lakitu</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/shy-guy">Shy Guy</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/sobre">Sobre</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/login">Login</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/cadastrar">Cadastrar-se</ion-label>
+      </ion-item>
+
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button color="medium"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Princesa Daisy</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding" class="plano-de-fundo">
+
+      <ion-row>
+        <ion-col>
+          <ion-accordion-group #accordionGroup>
+            <ion-accordion value="first">
+              <ion-item slot="header" color="light">
+                <ion-label>Apresentação do Personagem</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">Princesa Daisy apareceu pela primeira vez em Super 
+                Mario Land para Game Boy, onde ela era princesa de Sarasaland e foi raptada por Tatanga. 
+                Ela mostrou ter um amor por Luigi.
+              </div>
+            </ion-accordion>
+            <ion-accordion value="second">
+              <ion-item slot="header" color="light">
+                <ion-label>Sobre o Personagem</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">Por um longo período, Daisy foi um dos personagens 
+                mais desconhecidos da Nintendo, não tendo quase nem história. Sua primeira aparição, 
+                Super Mario Land, estrelou um elenco de personagens totalmente novos, que não funcionou 
+                muito bem na hora de serem lembrados, e acabaram sendo esquecidos.A sua relação com Peach 
+                é de duas primas, como foi revelado nos manuais do game Mario Kart Double Dash. 
+              </div>
+            </ion-accordion>
+            <ion-accordion value="third">
+              <ion-item slot="header" color="light">
+                <ion-label>Características</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">Cabelos castanhos longos, vestido e coroa, apesar 
+                dela ter vestido amarelo, brincos de margarida e coroa vermelha; Mas sua aparência foi 
+                mudando, e hoje ela tem cabelos curtos, coroa amarela (para não precisar distingui-la da 
+                coroa), mangas redondas e com detalhes floridos. O vestido agora, para não ser idêntica a 
+                de Peach, tem dois detalhes marrons logo no final. 
+              </div>
+            </ion-accordion>
+          </ion-accordion-group>
+        </ion-col>
+      </ion-row>
+    </ion-content>
+  </div>
 </ion-content>
