@@ -1,13 +1,16 @@
 ion-menu::part(backdrop) {
-    background-color:#012030;
-  }
-  
-  ion-menu::part(container) {
-    border-radius: 0 20px 20px 0;
-  
-    box-shadow: 4px 0px 16px #012030;
-  }
-  
+  background-color:#012030;
+}
+
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+
+  box-shadow: 4px 0px 16px #012030;
+}
 .plano-de-fundo {
-    --background: url('https://upload.wikimedia.org/wikipedia/en/b/bd/Daisy_%28Super_Mario_Party%29.png') no-repeat center center / cover;
-  }
+  --background: url('https://st3.depositphotos.com/4189501/32509/v/600/depositphotos_325097206-stock-illustration-old-retro-video-game-background.jpg') no-repeat center center / cover;
+}
+
+ion-img{
+  height:300px;
+}

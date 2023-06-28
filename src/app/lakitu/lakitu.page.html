@@ -1,13 +1,167 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>lakitu</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">lakitu</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="success">
+        <ion-title>Personagens</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-item>
+        <ion-label routerLink="/menu">Voltar ao Menu</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/mario">Super Mario</ion-label>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label routerLink="/peach">Princesa Peach</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/luigi">Luigi</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/yoshi">Yoshi</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/bowser">Bowser</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/toad">Toad</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/wario">Wario</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/waluigi">Waluigi</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/daisy">Princesa Daisy</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/rosalina">Rosalina</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/donkey-kong">Donkey Kong</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/diddy-kong">Diddy Kong</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/shy-guy">Shy Guy</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/sobre">Sobre</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/login">Login</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/cadastrar">Cadastrar-se</ion-label>
+      </ion-item>
+
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button color="medium"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Lakitu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding" class="plano-de-fundo">
+
+      <ion-row>
+        <ion-col>
+          <ion-accordion-group #accordionGroup>
+            <ion-accordion value="first">
+              <ion-item slot="header" color="success">
+                <ion-label>Nome</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Lakitu
+              </div>
+            </ion-accordion>
+            <ion-accordion value="second">
+              <ion-item slot="header" color="success">
+                <ion-label>Origem</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Lakitu é um personagem fictício criado pela Nintendo e é frequentemente retratado como 
+                um inimigo comum em jogos da franquia Mario.
+              </div>
+            </ion-accordion>
+            <ion-accordion value="third">
+              <ion-item slot="header" color="success">
+                <ion-label>Aparência</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Lakitu é retratado como uma criatura com uma concha verde que flutua no ar. 
+                Ele tem olhos grandes e uma boca sorridente. Geralmente, ele é mostrado segurando 
+                uma nuvem chamada "Cloud Koopa" e uma vara de filmagem.
+              </div>
+            </ion-accordion>
+            <ion-accordion value="fourth">
+              <ion-item slot="header" color="success">
+                <ion-label>Comportamento</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Lakitu é conhecido por sua tendência de flutuar no ar em sua nuvem e lançar objetos em 
+                direção aos jogadores. No entanto, em alguns jogos, Lakitu pode desempenhar papéis mais 
+                amigáveis, como fornecer itens ou ajudar o jogador em certas situações.
+              </div>
+            </ion-accordion>
+            <ion-accordion value="fifth">
+              <ion-item slot="header" color="success">
+                <ion-label>Variações</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Existem variações de Lakitu em diferentes jogos, como Spiny Lakitu, que lança Spiny Eggs 
+                mais perigosos, e Fishin' Lakitu, que usa uma vara de pescar para lançar objetos.
+              </div>
+            </ion-accordion>
+
+            <ion-accordion value="sixth">
+              <ion-item slot="header" color="success">
+                <ion-label>Papel nos Jogos</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Lakitu apareceu pela primeira vez como um inimigo em "Super Mario Bros." em 1985. Ele é 
+                conhecido por sua habilidade de lançar Spiny Eggs em direção ao jogador. Além disso, 
+                Lakitu também é visto em jogos atuando como um observador e cinegrafista, como em "Mario 
+                Kart", onde ele grava as corridas.
+              </div>
+            </ion-accordion>
+
+            <ion-accordion value="third">
+              <ion-item slot="header" color="success">
+                <ion-label>Imagem</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                <ion-img src="https://mario.wiki.gallery/images/thumb/f/f7/MKT_Lakitu_Tips.png/800px-MKT_Lakitu_Tips.png"></ion-img>
+              </div>
+            </ion-accordion>
+            
+          </ion-accordion-group>
+        </ion-col>
+      </ion-row>
+    </ion-content>
+  </div>
 </ion-content>

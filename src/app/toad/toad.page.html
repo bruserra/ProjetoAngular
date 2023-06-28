@@ -1,7 +1,7 @@
 <ion-content [fullscreen]="true">
   <ion-menu contentId="main-content">
     <ion-header>
-      <ion-toolbar color="tertiary">
+      <ion-toolbar color="success">
         <ion-title>Personagens</ion-title>
       </ion-toolbar>
     </ion-header>
@@ -92,37 +92,74 @@
         <ion-col>
           <ion-accordion-group #accordionGroup>
             <ion-accordion value="first">
-              <ion-item slot="header" color="light">
-                <ion-label>Apresentação do Personagem</ion-label>
+              <ion-item slot="header" color="success">
+                <ion-label>Nome</ion-label>
               </ion-item>
-              <div class="ion-padding" slot="content">Toad é um cogumelo humanóide, personagem da série de 
-                jogos Mario, da Nintendo. Mas ja foi corfimado de ele não ser um cogumelo.
+              <div class="ion-padding" slot="content">
+                Toad
               </div>
             </ion-accordion>
             <ion-accordion value="second">
-              <ion-item slot="header" color="light">
-                <ion-label>Sobre o Personagem</ion-label>
+              <ion-item slot="header" color="success">
+                <ion-label>Espécie</ion-label>
               </ion-item>
-              <div class="ion-padding" slot="content">O Toad original, de colete azul,cabeça branca e 
-                bolas da cabeça vermelhas.É representado por ser um servo e um escudeiro da Princesa; 
-                além de fazer várias outras tarefas, é mais comum encontrá-lo vigiando o interior do 
-                castelo. Apesar desta diferença, os Toads devem ser encarados como uma raça distinta do 
-                Mushroom Kingdom, e deve ser levado em consideração que eles (e elas) podem não só ser 
-                servos (como o original), mas sim viver normalmente, com rotinas, família, deveres, etc.
+              <div class="ion-padding" slot="content">
+                Toad é uma espécie de cogumelo antropomórfico. Ele é frequentemente retratado como um 
+                membro leal e dedicado da comunidade do Reino do Cogumelo.
               </div>
             </ion-accordion>
             <ion-accordion value="third">
-              <ion-item slot="header" color="light">
-                <ion-label>Toads Diferentes</ion-label>
+              <ion-item slot="header" color="success">
+                <ion-label>Aparência</ion-label>
               </ion-item>
-              <div class="ion-padding" slot="content">Como se fossem outros Toads e não o mesmo (não 
-                somente mudando a roupa e vestimenta, mas também a aparência, o modo de pensar etc.); 
-                existem os Toads com coletes diferentes e não iguais, como vermelhos, amarelos verdes 
-                e rosas e transparente (supostamente mulheres com roupas transparente) e também outros 
-                com mais acessórios e coisas, como pode ser visto em Mario Party Advance, Super Mario S
-                unshine e Mario Superstar Baseball.
+              <div class="ion-padding" slot="content">
+                Toad é caracterizado por seu corpo redondo e cabeça em formato de cogumelo. Ele tem olhos 
+                grandes, um sorriso amigável e geralmente usa um colete azul com botões amarelos e uma 
+                veste branca.
               </div>
             </ion-accordion>
+            <ion-accordion value="fourth">
+              <ion-item slot="header" color="success">
+                <ion-label>Variações</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Além do Toad comum, existem variações de cores como Toadette, Toadsworth e Capitão Toad, 
+                cada um com suas próprias características e personalidades distintas.
+              </div>
+            </ion-accordion>
+            <ion-accordion value="fifth">
+              <ion-item slot="header" color="success">
+                <ion-label>Personalidade</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Toad é conhecido por ser corajoso, otimista e prestativo. Ele frequentemente oferece ajuda
+                 e informações úteis a Mario e seus amigos em suas aventuras. Toad é retratado como um 
+                 personagem amigável e alegre.
+              </div>
+            </ion-accordion>
+
+            <ion-accordion value="sixth">
+              <ion-item slot="header" color="success">
+                <ion-label>Papel nos Jogos</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Toad apareceu pela primeira vez como um personagem de apoio no jogo "Super Mario Bros." em 
+                1985. Desde então, ele desempenhou vários papéis em jogos da franquia Mario, incluindo a 
+                função de ajudante, fornecedor de itens e até personagem jogável em jogos como "Super 
+                Mario 3D World".
+              </div>
+            </ion-accordion>
+
+            <ion-accordion value="third">
+              <ion-item slot="header" color="success">
+                <ion-label>Imagem</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                <ion-img src="https://mario.wiki.gallery/images/8/89/MPS_Toad_Artwork.png"></ion-img>
+              </div>
+            </ion-accordion>
+            
+            
           </ion-accordion-group>
         </ion-col>
       </ion-row>

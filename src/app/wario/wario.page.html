@@ -1,7 +1,7 @@
 <ion-content [fullscreen]="true">
   <ion-menu contentId="main-content">
     <ion-header>
-      <ion-toolbar color="tertiary">
+      <ion-toolbar color="success">
         <ion-title>Personagens</ion-title>
       </ion-toolbar>
     </ion-header>
@@ -92,32 +92,75 @@
         <ion-col>
           <ion-accordion-group #accordionGroup>
             <ion-accordion value="first">
-              <ion-item slot="header" color="light">
-                <ion-label>Apresentação do Personagem</ion-label>
+              <ion-item slot="header" color="success">
+                <ion-label>Nome</ion-label>
               </ion-item>
-              <div class="ion-padding" slot="content">Wario é uma personagem das séries do Mario, ele 
-                tem um irmão chamado Waluigi, que juntos odeiam Mario e Luigi. 
+              <div class="ion-padding" slot="content">
+                Wario
               </div>
             </ion-accordion>
             <ion-accordion value="second">
-              <ion-item slot="header" color="light">
-                <ion-label>Sobre o Personagem</ion-label>
+              <ion-item slot="header" color="success">
+                <ion-label>Origem</ion-label>
               </ion-item>
-              <div class="ion-padding" slot="content">Wario não é malvado (como os fãs pensam), ele é 
-                apenas metido. Wario é apenas porco, ogro, etc. Ele é primo de Mario (e consecuitivamente 
-                o de Luigi). 
+              <div class="ion-padding" slot="content">
+                Wario é um personagem fictício criado pela Nintendo e é conhecido como um "anti-herói" na 
+                franquia Mario.
               </div>
             </ion-accordion>
             <ion-accordion value="third">
-              <ion-item slot="header" color="light">
-                <ion-label>Objetivos</ion-label>
+              <ion-item slot="header" color="success">
+                <ion-label>Aparência</ion-label>
               </ion-item>
-              <div class="ion-padding" slot="content"> Wario é gostado pelos fãs desde o Mario Kart 64. 
-                Os itens que ele mais gosta são o Bob-Omb e o Boo. Wario tem seus jogos muito famosos , 
-                como por exemplo Wario Land e Wario World, os jogos do Wario. Têm o objetivo de ganhar 
-                dinheiro, ou receber algo valioso.
+              <div class="ion-padding" slot="content">
+                Wario é retratado como um homem corpulento com um bigode grosso, pele amarelada e olhos 
+                arregalados. Ele geralmente é mostrado usando um macacão roxo com botões amarelos e um 
+                boné amarelo com uma letra "W" nele.
               </div>
             </ion-accordion>
+            <ion-accordion value="fourth">
+              <ion-item slot="header" color="success">
+                <ion-label>Habilidades</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Wario possui força física excepcional e é capaz de realizar ataques poderosos, como o 
+                "Shoulder Bash" (investida de ombro) e o "Ground Pound" (pulso no chão). Ele também é 
+                conhecido por sua resistência e resistência a certos efeitos negativos.
+              </div>
+            </ion-accordion>
+            <ion-accordion value="fifth">
+              <ion-item slot="header" color="success">
+                <ion-label>Personalidade</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Wario é conhecido por ser ganancioso, egoísta e travesso. Ele está frequentemente em busca 
+                de tesouros, dinheiro e poder, muitas vezes entrando em conflito com Mario e seus amigos. 
+                Wario tem uma personalidade robusta e muitas vezes é retratado como um personagem excêntrico
+                e debochado.
+              </div>
+            </ion-accordion>
+
+            <ion-accordion value="sixth">
+              <ion-item slot="header" color="success">
+                <ion-label>Papel nos Jogos</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Wario estreou como um antagonista em "Super Mario Land 2: 6 Golden Coins" em 1992 e 
+                posteriormente estrelou em vários jogos próprios, como a série "Wario Land" e "WarioWare". 
+                Nessas séries, ele embarca em suas próprias aventuras e desafios.
+              </div>
+            </ion-accordion>
+
+            <ion-accordion value="third">
+              <ion-item slot="header" color="success">
+                <ion-label>Imagem</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                <ion-img src="https://play.nintendo.com/images/Masthead_Wario.17345b1513ac044897cfc243542899dce541e8dc.9afde10b.png"></ion-img>
+              </div>
+            </ion-accordion>
+            
+            
           </ion-accordion-group>
         </ion-col>
       </ion-row>

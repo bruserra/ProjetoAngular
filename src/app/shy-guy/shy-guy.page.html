@@ -1,13 +1,169 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>shy-guy</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">shy-guy</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="success">
+        <ion-title>Personagens</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-item>
+        <ion-label routerLink="/menu">Voltar ao Menu</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/mario">Super Mario</ion-label>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label routerLink="/peach">Princesa Peach</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/luigi">Luigi</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/yoshi">Yoshi</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/bowser">Bowser</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/toad">Toad</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/wario">Wario</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/waluigi">Waluigi</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/daisy">Princesa Daisy</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/rosalina">Rosalina</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/donkey-kong">Donkey Kong</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/diddy-kong">Diddy Kong</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/lakitu">Lakitu</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/sobre">Sobre</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/login">Login</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label routerLink="/cadastrar">Cadastrar-se</ion-label>
+      </ion-item>
+
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button color="medium"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Shy Guy</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding" class="plano-de-fundo">
+
+      <ion-row>
+        <ion-col>
+          <ion-accordion-group #accordionGroup>
+            <ion-accordion value="first">
+              <ion-item slot="header" color="success">
+                <ion-label>Nome</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Shy Guy
+              </div>
+            </ion-accordion>
+            <ion-accordion value="second">
+              <ion-item slot="header" color="success">
+                <ion-label>Origem</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Shy Guy é um personagem fictício criado pela Nintendo e é frequentemente retratado como 
+                um inimigo comum na franquia Mario.
+              </div>
+            </ion-accordion>
+            <ion-accordion value="third">
+              <ion-item slot="header" color="success">
+                <ion-label>Aparência</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Shy Guy é retratado como uma pequena criatura coberta por uma máscara facial e um manto 
+                colorido. A cor da máscara e do manto pode variar, incluindo cores como vermelho, azul, 
+                verde e mais.
+              </div>
+            </ion-accordion>
+            <ion-accordion value="fourth">
+              <ion-item slot="header" color="success">
+                <ion-label>Comportamento</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Shy Guy é conhecido por sua timidez e por esconder seu rosto por trás da máscara. Eles 
+                são tipicamente vistos seguindo ordens ou realizando tarefas para outros vilões da 
+                franquia Mario. No entanto, em alguns jogos, Shy Guys podem desempenhar papéis mais 
+                neutros ou até mesmo amigáveis.
+              </div>
+            </ion-accordion>
+            <ion-accordion value="fifth">
+              <ion-item slot="header" color="success">
+                <ion-label>Variações</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Existem várias variações de Shy Guy, cada uma com habilidades e características únicas. 
+                Alguns exemplos incluem Fly Guy, que possui asas e pode voar, e Snifit, que usa uma 
+                máscara semelhante, mas dispara projéteis.
+              </div>
+            </ion-accordion>
+
+            <ion-accordion value="sixth">
+              <ion-item slot="header" color="success">
+                <ion-label>Papel nos Jogos</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                Shy Guys apareceram pela primeira vez como inimigos em "Yume Kōjō: Doki Doki Panic" em 
+                1987, que foi posteriormente refeito e lançado como "Super Mario Bros. 2". Desde então, 
+                Shy Guys se tornaram personagens recorrentes na série Mario, aparecendo em diversos 
+                jogos, como os jogos da série "Mario Kart", "Mario Party" e muitos outros.
+              </div>
+            </ion-accordion>
+
+            <ion-accordion value="third">
+              <ion-item slot="header" color="success">
+                <ion-label>Imagem</ion-label>
+              </ion-item>
+              <div class="ion-padding" slot="content">
+                <ion-img src="https://www.giantbomb.com/a/uploads/scale_medium/3/34651/3469841-shyguy.png"></ion-img>
+              </div>
+            </ion-accordion>
+            
+          </ion-accordion-group>
+        </ion-col>
+      </ion-row>
+    </ion-content>
+  </div>
 </ion-content>
